@@ -4,7 +4,7 @@ import { BsFillShareFill } from "react-icons/bs";
 const ContactInfo = () => {
   return (
     <div className="contactInfo container">
-      <div className="row">
+      <div className="row contacts">
         <div className="col-12 col-md-4 contact-Box">
           <div className="box-info">
             <div className="info-image">

@@ -34,7 +34,7 @@ const CartScreen = ({ match, location, history }) => {
       {/* Cart */}
       <div className="container">
         {cartItems.length === 0 ? (
-          <div className=" alert alert-info text-center mt-3">
+          <div className="empty-cart">
             Your cart is empty
             <Link
               className="shopping-now"
@@ -45,7 +45,7 @@ const CartScreen = ({ match, location, history }) => {
           </div>
         ) : (
           <>
-            <div className=" alert alert-info text-center mt-3">
+            <div className="empty-cart">
               Total Cart Products
               <Link className="text-success mx-2" to="/cart">
                 ({cartItems.length})
@@ -53,7 +53,7 @@ const CartScreen = ({ match, location, history }) => {
             </div>
             {/* cartiterm */}
             {cartItems.map((item) => (
-              <div className="cart-iterm row" key={item.product}>
+              <div className="cart-item row" key={item.product}>
                 <div
                   onClick={() => removeFromCartHandle(item.product)}
                   className="remove-button d-flex justify-content-center align-items-center"
