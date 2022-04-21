@@ -123,7 +123,7 @@ textarea:focus {
   color: #fff;
   text-transform: uppercase;
   font-size: 15px;
-  margin-right: 2rem;
+  margin-right: 15px;
   font-weight: bold;
   position: relative;
 }
@@ -755,6 +755,20 @@ textarea:focus {
 .page-item.active .page-link {
   background-color: black;
   border: 1px solid black;
+}
+
+.scroll-to-top-visible {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  background-color: #202020;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  transition: right 0.2s ease-in-out;
+  border: none;
 }
 
 @media (max-width: 768px) {
