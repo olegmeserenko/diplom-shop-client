@@ -1,7 +1,8 @@
+$main-color: #202020;
+
 body {
   margin: 0;
   font-family: "Josefin Sans", sans-serif;
-  /* font-family: 'Open Sans', sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 17px;
@@ -44,7 +45,7 @@ textarea:focus {
   padding: 10px;
 }
 .Announcement {
-  background-color: #202020;
+  background-color: $main-color;
   padding: 10px 0px 6px 0px;
 }
 .Announcement .col-md-6 p {
@@ -77,7 +78,7 @@ textarea:focus {
   height: 50px;
 }
 .search-button {
-  background-color: #202020;
+  background-color: $main-color;
   color: white;
   border: 0;
   text-transform: uppercase;
@@ -101,7 +102,7 @@ textarea:focus {
   margin-left: 20px;
   border-radius: 5px;
   border: 1px solid #ced4da;
-  color: #202020;
+  color: $main-color;
   cursor: pointer;
   background-color: #f3f3f3;
   height: 40px;
@@ -147,7 +148,7 @@ textarea:focus {
 }
 
 .dropdown-menu {
-  background-color: #202020 !important;
+  background-color: $main-color !important;
   border: 0 !important;
   padding: 0 !important;
   overflow: hidden;
@@ -160,7 +161,7 @@ textarea:focus {
 .dropdown-menu a:hover {
   background-color: white;
   color:black !important;
-  border: 1px solid #202020;
+  border: 1px solid $main-color;
 }
 .mobile-header {
   display: none;
@@ -208,13 +209,13 @@ textarea:focus {
 }
 .border-product {
   padding: 15px;
-  border: 1px solid #202020;
+  border: 1px solid $main-color;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
 
 .product-add-to-cart {  
-  background: #202020;
+  background: $main-color;
   color: #fff;
   width: 100%;
   height: 50px;
@@ -426,7 +427,7 @@ textarea:focus {
 }
 .round-black-btn {
   border-radius: 4px;
-  background: #202020;
+  background: $main-color;
   color: #fff;
   width: 100%;
   height: 50px;
@@ -440,7 +441,7 @@ textarea:focus {
 .shopping-now {
   font-size: 12px;
   color: white;
-  background-color: #202020;
+  background-color: $main-color;
   padding: 15px;
   margin-left: 15px;
   border-radius: 5px;
@@ -480,7 +481,7 @@ textarea:focus {
   margin-top: 20px;
   padding: 20px 0;
   border: 0;
-  background-color: #202020;
+  background-color: $main-color;
   border-radius: 5px;
   text-transform: uppercase;
   color: white;
@@ -524,7 +525,7 @@ textarea:focus {
   padding: 15px 20px;
   font-size: 13px;
   background-color: #ffffff;
-  color: #202020;
+  color: $main-color;
   width: 100%;
   text-align: start;
   border-radius: 0;
@@ -533,7 +534,7 @@ textarea:focus {
 }
 .wizard .nav .active {
   background-color: #e5fee9;
-  color: #202020;
+  color: $main-color;
 }
 .badge2 {
   width: 20px;
@@ -566,7 +567,7 @@ textarea:focus {
   margin-top: 20px;
   text-transform: uppercase;
   font-size: 13px;
-  background-color: #202020;
+  background-color: $main-color;
   color: #ffffff;
 }
 /* orders */
@@ -589,7 +590,7 @@ textarea:focus {
   background-color: white;
   box-shadow: 0 12px 20px 1px rgba(64, 64, 64, 0.09);
   position: relative;
-  border: 1px solid #202020;
+  border: 1px solid $main-color;
   border-radius: 5px;
 }
 
@@ -613,7 +614,7 @@ textarea:focus {
   top: 5px;
   right: 0;
   font-size: 20px;
-  color: #202020;
+  color: $main-color;
   cursor: pointer;
 }
 .cart-image img {
@@ -659,7 +660,7 @@ textarea:focus {
 }
 .total .total-price {
   font-size: 20px;
-  color: #202020;
+  color: $main-color;
   font-weight: bold;
 }
 .cart-buttons {
@@ -680,7 +681,7 @@ textarea:focus {
 }
 /* FOOTER */
 .footer {
-  background-color: #202020;
+  background-color: $main-color;
 }
 .footer-container {
   padding: 25px;
@@ -761,7 +762,7 @@ textarea:focus {
   position: fixed;
   right: 10px;
   bottom: 10px;
-  background-color: #202020;
+  background-color: $main-color;
   color: white;
   border-radius: 50%;
   cursor: pointer;
