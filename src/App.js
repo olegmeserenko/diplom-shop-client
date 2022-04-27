@@ -19,15 +19,15 @@ const App = () => {
   return (
     <Router>
       <Switch>
-        <PrivateRouter path="/" component={HomeScreen} exact />
-        <PrivateRouter path="/search/:keyword" component={HomeScreen} exact />
-        <PrivateRouter path="/page/:pagenumber" component={HomeScreen} exact />
-        <PrivateRouter
+        <Route path="/" component={HomeScreen} exact />
+        <Route path="/search/:keyword" component={HomeScreen} exact />
+        <Route path="/page/:pagenumber" component={HomeScreen} exact />
+        <Route
           path="/search/:keyword/page/:pageNumber"
           component={HomeScreen}
           exact
         />
-        <PrivateRouter path="/products/:id" component={SingleProduct} />
+        <Route path="/products/:id" component={SingleProduct} />
         <Route path="/login" component={Login} />
         <Route path="/register" component={Register} />
         <PrivateRouter path="/profile" component={ProfileScreen} />

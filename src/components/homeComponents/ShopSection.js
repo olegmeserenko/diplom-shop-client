@@ -83,8 +83,6 @@ const ShopSection = (props) => {
                             </option>
                             <option value="htl">Higher to lower price</option>
                             <option value="lth">Lower to higher price</option>
-                            <option value="atoz">A-Z</option>
-                            <option value="ztoa">Z-A</option>
                             <option value="rating">Rating</option>
                             <option value="reviews">Number of reviews</option>
                           </select>

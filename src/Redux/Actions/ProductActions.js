@@ -94,12 +94,6 @@ export const productsSort = (products, filter) => async (dispatch) => {
     case "htl":
       products.sort((a, b) => b.price - a.price);
       break;
-    case "atoz":
-      products.sort((a, b) => a.name.localeCompare(b.name));
-      break;
-    case "ztoa":
-      products.sort((a, b) => b.name.localeCompare(a.name));
-      break;
     case "rating":
       products.sort((a, b) => b.rating - a.rating);
       break;
