@@ -204,12 +204,6 @@ const OrderScreen = ({ match }) => {
                     </tr>
                     <tr>
                       <td>
-                        <strong>Tax</strong>
-                      </td>
-                      <td>${order.taxPrice}</td>
-                    </tr>
-                    <tr>
-                      <td>
                         <strong>Total</strong>
                       </td>
                       <td>${order.totalPrice}</td>

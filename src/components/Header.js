@@ -20,13 +20,13 @@ const Header = () => {
       {/* Top Header */}
       <div className="Announcement ">
         <div className="container">
-          <div className="row navigation">
-            <div className="col-6 d-flex align-items-center">
+          <div className="navigation">
+            <div className="logo">
               <Link className="brand" to="/">
                 <i className="fab fa-shopify" /> Meserenko Shop
               </Link>
             </div>
-            <div className="col-6 d-flex align-items-center justify-content-end Login-Register">
+            <div className="user-cart Login-Register">
               {userInfo ? (
                 <>
                   <div className="btn-group">
