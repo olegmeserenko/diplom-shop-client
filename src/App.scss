@@ -46,16 +46,29 @@ a {
   }
 }
 
-i, a, p, h1, h2, h3, h4, h5, h6, span {
+i,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
   padding: 0;
   margin: 0;
 }
 
-input:focus, select:focus, textarea:focus {
+input:focus,
+select:focus,
+textarea:focus {
   outline: 0px;
 }
 
-.row, .col-6, .col-4 {
+.row,
+.col-6,
+.col-4 {
   margin: 0;
   padding: 0;
 }
@@ -82,6 +95,7 @@ input:focus, select:focus, textarea:focus {
     margin-right: 6rem;
     font-size: 15px;
   }
+
   &.col-12 a {
     color: white;
     margin-right: 2rem;
@@ -101,6 +115,7 @@ input:focus, select:focus, textarea:focus {
   color: #fff;
   font-size: 1.5rem;
   font-weight: bold;
+
   &:hover {
     color: #fff;
   }
@@ -161,6 +176,7 @@ input:focus, select:focus, textarea:focus {
   margin-right: 15px;
   font-weight: bold;
   position: relative;
+
   &:nth-last-child(1) {
     margin-right: 0rem;
   }
@@ -183,7 +199,7 @@ input:focus, select:focus, textarea:focus {
 }
 
 .dropdown-menu {
-  background-color: $main-color !important;
+  background-color: $main-color  !important;
   border: 0 !important;
   padding: 0 !important;
   overflow: hidden;
@@ -192,12 +208,18 @@ input:focus, select:focus, textarea:focus {
     padding: 10px 20px !important;
     color: #ffffff !important;
     margin: 0 !important;
+
     &:hover {
       background-color: white;
       color: black !important;
       border: 1px solid $main-color;
     }
   }
+}
+
+.no-response {
+  text-align: center;
+  padding: 5px;
 }
 
 .mobile-header {
@@ -297,8 +319,7 @@ input:focus, select:focus, textarea:focus {
 
 .subscribe-section {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.226), rgba(0, 0, 0, 0.226)),
-    url("https://sasshoes-com.s3.us-west-2.amazonaws.com/img/banner-uplift-21.jpg")
-      no-repeat scroll center / cover;
+    url("https://sasshoes-com.s3.us-west-2.amazonaws.com/img/banner-uplift-21.jpg") no-repeat scroll center / cover;
   padding: 100px 0 100px;
 }
 
@@ -343,7 +364,9 @@ input:focus, select:focus, textarea:focus {
   margin-left: 20px;
 }
 
-.contact-Box, .box-info, .info-image {
+.contact-Box,
+.box-info,
+.info-image {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -482,7 +505,7 @@ input:focus, select:focus, textarea:focus {
   & button {
     @include login-btn;
   }
-  
+
   & input {
     width: 100%;
     padding: 20px 20px;
@@ -507,6 +530,7 @@ input:focus, select:focus, textarea:focus {
 
 .Login2 {
   @include login;
+
   & button {
     @include login-btn;
   }
@@ -606,6 +630,7 @@ input:focus, select:focus, textarea:focus {
   border-bottom: 1px solid blue;
   padding-bottom: 5px;
   font-size: 15px;
+
   &:hover {
     color: blue;
   }
@@ -654,7 +679,9 @@ input:focus, select:focus, textarea:focus {
   height: 150px;
   object-fit: contain;
 }
-.cart-text a h4, .cart-price h4 {
+
+.cart-text a h4,
+.cart-price h4 {
   font-size: 17px;
   font-weight: bold;
 }
@@ -706,7 +733,8 @@ input:focus, select:focus, textarea:focus {
 .cart-buttons {
   margin: 90px 0;
 
-  & a button, & div button {
+  & a button,
+  & div button {
     width: 80%;
     padding: 15px 0;
     border: 0px;
@@ -754,7 +782,7 @@ input:focus, select:focus, textarea:focus {
   & p {
     margin-top: 2px;
   }
-  
+
   & h5 {
     margin-bottom: 6px;
   }
@@ -829,6 +857,7 @@ input:focus, select:focus, textarea:focus {
   .brand {
     font-size: 1.1rem;
   }
+
   .contact-Box {
     margin-top: 20px;
   }
@@ -845,6 +874,7 @@ input:focus, select:focus, textarea:focus {
   .brand {
     font-size: 15px;
   }
+
   .empty-cart {
     padding: 4px;
   }

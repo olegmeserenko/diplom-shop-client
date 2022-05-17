@@ -82,56 +82,62 @@ const ShopSection = (props) => {
                     </select>
                   </div>
                 </div>
-                {products.map((product) => (
-                  <div
-                    className="shop col-lg-4 col-md-6 col-sm-6"
-                    key={product._id}
-                  >
-                    <div className="border-product">
-                      <Link to={`/products/${product._id}`}>
-                        <div className="shopBack">
-                          <img src={product.image} alt={product.name} />
-                        </div>
-                      </Link>
-
-                      <div className="shoptext">
-                        <p>
-                          <Link to={`/products/${product._id}`}>
-                            {product.name}
-                          </Link>
-                        </p>
-
-                        <Rating
-                          value={product.rating}
-                          text={`${product.numReviews} reviews`}
-                        />
-                        <h3>${product.price}</h3>
-                        <h4
-                          className={
-                            product.countInStock > 0
-                              ? "is-available"
-                              : "not-available"
-                          }
-                        >
-                          {product.countInStock > 0
-                            ? "Is available"
-                            : "Not available"}
-                        </h4>
-                      </div>
-                    </div>
-                    <button
-                      onClick={
-                        product.countInStock > 0
-                          ? (e) => AddToCartHandle(e, product._id)
-                          : null
-                      }
-                      className="product-add-to-cart"
-                      disabled={product.countInStock === 0}
+                {products.length > 0 ? (
+                  products.map((product) => (
+                    <div
+                      className="shop col-lg-4 col-md-6 col-sm-6"
+                      key={product._id}
                     >
-                      Add to cart
-                    </button>
-                  </div>
-                ))}
+                      <div className="border-product">
+                        <Link to={`/products/${product._id}`}>
+                          <div className="shopBack">
+                            <img src={product.image} alt={product.name} />
+                          </div>
+                        </Link>
+
+                        <div className="shoptext">
+                          <p>
+                            <Link to={`/products/${product._id}`}>
+                              {product.name}
+                            </Link>
+                          </p>
+
+                          <Rating
+                            value={product.rating}
+                            text={`${product.numReviews} reviews`}
+                          />
+                          <h3>${product.price}</h3>
+                          <h4
+                            className={
+                              product.countInStock > 0
+                                ? "is-available"
+                                : "not-available"
+                            }
+                          >
+                            {product.countInStock > 0
+                              ? "Is available"
+                              : "Not available"}
+                          </h4>
+                        </div>
+                      </div>
+                      <button
+                        onClick={
+                          product.countInStock > 0
+                            ? (e) => AddToCartHandle(e, product._id)
+                            : null
+                        }
+                        className="product-add-to-cart"
+                        disabled={product.countInStock === 0}
+                      >
+                        Add to cart
+                      </button>
+                    </div>
+                  ))
+                ) : (
+                  <h1 className="no-response">
+                    No products were found for your request
+                  </h1>
+                )}
               </>
             )}
 
